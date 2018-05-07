@@ -1,3 +1,5 @@
 exports.handler = function(event, context, callback) {
-  // do nothing
+  setTimeout(15 * 1000, function() {
+    callback();
+  });
 };
