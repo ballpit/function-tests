@@ -1,5 +1,6 @@
 exports.handler = function(event, context, callback) {
-  console.log("deploy locked", event);
+  var body = JSON.parse(event.body);
+  console.log("deploy locked", body.payload);
   callback(null, {
     statusCode: 200
   });
