@@ -1,2 +1,3 @@
 [build]
   functions = "functions"
+  environment = { GO_IMPORT_PATH = "github.com/netlify/function-tests" }
