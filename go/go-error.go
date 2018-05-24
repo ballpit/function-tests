@@ -8,8 +8,8 @@ import (
 	"github.com/aws/aws-lambda-go/lambda"
 )
 
-func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	return events.APIGatewayProxyResponse{}, fmt.Errorf("function error")
+func handler(ctx context.Context, request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
+	return nil, fmt.Errorf("function error")
 }
 
 func main() {
