@@ -2,4 +2,5 @@
   publish = "public"
   functions = "functions"
   environment = { GO_IMPORT_PATH = "github.com/netlify/function-tests" }
-  command = "cd go && go get ./... && go build -o ../functions/go-error ./... && cd .."
+  #command = "cd go && go get ./... && go build -o ../functions/go-error ./... && cd .."
+  command = "exit 1"
