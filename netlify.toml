@@ -2,4 +2,4 @@
   publish = "public"
   functions = "functions"
   environment = { GO_VERSION = "1.12" }
-  command = "go mod download && cd go && go build -o ../functions/go-error ./... && cd .."
+  command = "npm install && go mod download && cd go && go build -o ../functions/go-error ./... && cd .."
